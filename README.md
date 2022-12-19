@@ -28,7 +28,7 @@ THEN the password is either displayed in an alert or written to the page
 
 * The following image shows the web application's appearance and functionality:
 
-https://courses.bootcampspot.com/courses/2781/files/2341000/preview
+![Alt text](/Develop/assets/password%20generator.png)
 
 ## Submission
 
