@@ -25,7 +25,7 @@ function generatePassword() {
       } 
 
       // Alert confirming how many characters the password will have 
-      alert('Your password will have' + confirmLength + 'characters');
+      alert('Your password will have ' + confirmLength + ' characters');
 
     // Determine parameters of password where you click to confirm the criteria or cancel if you do not want a specific criteria
     var confirmSpecialCharacter = confirm("Click OK to confirm if you would like to include special characters");
@@ -65,24 +65,20 @@ function generatePassword() {
       console.log(characters)
 
       // Empty string to be that will be filled from the loop where it selects random characters in the array from lines 69-73
-      
+      var randomPassword = "";
       for (var i = 0; i < confirmLength; i++) {
         randomPassword = randomPassword + characters[Math.floor(Math.random() * characters.length)];
-        console.log(randomPassword)
+      
       }
+      console.log(randomPassword)
       return randomPassword;
 }
 
-// This will write the password to the ID password
+// This will write the password to the ID called password
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
+
 }
-
-
-
- 
- 
- 
